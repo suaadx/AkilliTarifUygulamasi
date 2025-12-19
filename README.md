@@ -56,7 +56,6 @@ Herhangi bir sağlık problemi olmayan kullanıcılar için uygulama,
 tüm tarifleri kısıtlama olmaksızın erişilebilir hale getirir.
 Bu kullanıcılar, uygulamadaki tüm tariflerden ve öneri sisteminden faydalanabilmektedir.
 
-> Bu sağlık durumları admin paneli üzerinden yönetilebilmektedir.
 
 ---
 
@@ -107,7 +106,7 @@ Bu kurallar, uygulama içerisinde kural tabanlı bir filtreleme mantığı ile p
 - Tarif ekleme / silme / güncelleme  
 - Yorumları yönetme  
 - Kullanıcıları yönetme  
-- Sağlık durumlarını ekleme ve silme  
+-  Tanımlı sağlık durumlarını görüntüleme
 
 ---
 
@@ -115,9 +114,6 @@ Bu kurallar, uygulama içerisinde kural tabanlı bir filtreleme mantığı ile p
 
 ### Splash Screen
 ![Splash](screenshots/splash.png)
-
-### Giriş Ekranı
-![Login](screenshots/login.png)
 
 ### Sağlık Durumu Seçimi
 ![Sağlık Durumu](screenshots/saglikdurum.png)
@@ -131,17 +127,9 @@ Bu kurallar, uygulama içerisinde kural tabanlı bir filtreleme mantığı ile p
 ### Tarif Detay Sayfası
 ![Tarif Detay](screenshots/tarifdetay.png)
 
-### Favoriler
-![Favoriler](screenshots/favori.png)
-
-### Profil Sayfası
-![Profil](screenshots/profil.png)
-
 ### Yönetici Paneli
 ![Admin Panel](screenshots/adminhome.png)
 
-### Sağlık Durumları Yönetimi
-![Admin Sağlık](screenshots/adminsaglik.png)
 
 ---
 
