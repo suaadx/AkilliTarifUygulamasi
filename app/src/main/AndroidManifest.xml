@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AkilliTarifUygulamasi"
+        tools:targetApi="31">
+
+        <!-- SplashActivity is the launcher now -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- LoginActivity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AkilliTarifUygulamasi" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".HealthStatusActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".RecommendedRecipesActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
+
+
+        <activity android:name=".RecipeDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".FavorilerActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity android:name=".EditProfileActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false"/>
+
+        <activity android:name=".AdminHomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity android:name=".ManageUsersActivity"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity android:name=".ActivityLogActivity"
+            android:theme="@style/Theme.AkilliTarifUygulamasi" />
+
+        <activity android:name=".UserActivityLogActivity"
+            android:theme="@style/Theme.AkilliTarifUygulamasi" />
+
+        <activity
+            android:name=".AdminManageCommentsActivity"
+            android:theme="@style/Theme.AkilliTarifUygulamasi" />
+
+        <activity
+            android:name=".AdminManageRecipesActivity"
+            android:theme="@style/Theme.AkilliTarifUygulamasi" />
+
+        <activity
+            android:name=".AdminAddRecipeActivity"
+            android:theme="@style/Theme.AkilliTarifUygulamasi" />
+
+        <activity
+            android:name=".AdminEditRecipeActivity"
+            android:theme="@style/Theme.AkilliTarifUygulamasi" />
+
+        <activity
+            android:name=".TopRatedRecipesActivity"
+            android:theme="@style/Theme.AkilliTarifUygulamasi" />
+
+        <activity
+            android:name=".TopFavoritedRecipesActivity"
+            android:theme="@style/Theme.AkilliTarifUygulamasi" />
+        <activity
+            android:name=".AdminManageHealthActivity"
+            android:theme="@style/Theme.AkilliTarifUygulamasi" />
+
+        <activity
+            android:name=".AdminAddHealthStatusActivity"
+            android:theme="@style/Theme.AkilliTarifUygulamasi" />
+
+        <activity android:name=".SmartHomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
+
+
+    </application>
+
+</manifest>

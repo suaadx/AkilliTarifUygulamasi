@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="10dp"
+    android:elevation="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- اسم الوصفة -->
+    <TextView
+        android:id="@+id/txtRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tarif: Örnek Tarif"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#222" />
+
+    <!-- اسم المستخدم -->
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı Hesabı: Suad"
+        android:textSize="15sp"
+        android:textColor="#222"
+        android:layout_marginTop="2dp" />
+
+    <!-- خط فاصل -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- نص التعليق -->
+    <TextView
+        android:id="@+id/txtComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yorum metni burada yazılacak."
+        android:textSize="14sp"
+        android:textColor="#333" />
+
+    <!-- زر الحذف -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sil"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#F44336"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

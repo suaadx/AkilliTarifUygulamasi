@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- عنوان -->
+        <TextView
+            android:text="Yönetim Paneli"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <!-- بطاقة عدد المستخدمين -->
+        <LinearLayout
+            android:id="@+id/cardUsers"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:elevation="5dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Toplam Kullanıcı"
+                android:textSize="16sp"
+                android:textColor="#777"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvTotalUsers"
+                android:text="0 Kişi"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <!-- بطاقة عدد الوصفات -->
+        <LinearLayout
+            android:id="@+id/cardRecipes"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:elevation="5dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Toplam Tarif"
+                android:textSize="16sp"
+                android:textColor="#777"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvTotalRecipes"
+                android:text="0 Tarif"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <!-- بطاقة عدد التعليقات -->
+        <LinearLayout
+            android:id="@+id/cardComments"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:elevation="5dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Toplam Yorum"
+                android:textSize="16sp"
+                android:textColor="#777"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvTotalComments"
+                android:text="0 Yorum"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <!-- أعلى الوصفات تقييمًا -->
+        <Button
+            android:id="@+id/btnTopRated"
+            android:text="En Yüksek Puan Alan Tarifler"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"/>
+
+        <!-- إدارة الوصفات -->
+        <Button
+            android:id="@+id/btnManageRecipes"
+            android:text="Tarifleri Yönet"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white"/>
+
+        <!-- إدارة التعليقات -->
+        <Button
+            android:id="@+id/btnManageComments"
+            android:text="Yorumları Yönet"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF9800"
+            android:textColor="@android:color/white"/>
+
+        <!-- إدارة المستخدمين -->
+        <Button
+            android:id="@+id/btnManageUsers"
+            android:text="Kullanıcıları Yönet"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9C27B0"
+            android:textColor="@android:color/white"/>
+        <!-- سجل نشاطات المستخدمين -->
+        <Button
+            android:id="@+id/btnManageHealth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sağlık Durumlarını Yönet"
+            android:background="@color/purple_700"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

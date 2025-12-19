@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- ================= SWIPE REFRESH ================= -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- ⚠️ IMPORTANT: ONLY ONE CHILD -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:paddingBottom="70dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <!-- Toolbar -->
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/mainToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="?attr/colorPrimary"
+                    android:title="Akıllı Tarifler"
+                    android:titleTextColor="@android:color/white" />
+
+                <!-- Search -->
+                <EditText
+                    android:id="@+id/searchBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Tarif ara..."
+                    android:padding="10dp"
+                    android:background="@drawable/search_background"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    android:drawablePadding="8dp"
+                    android:layout_marginTop="12dp" />
+
+                <!-- Search Results -->
+                <TextView
+                    android:id="@+id/searchResultsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arama Sonuçları"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="8dp" />
+
+                <!-- Meals -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Öğün Seç"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="22dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/btnKahvalti"
+                        android:backgroundTint="@color/green"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:text="Kahvaltı" />
+
+                    <Button
+                        android:id="@+id/btnOgle"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:text="Öğle"
+                        android:backgroundTint="@color/green"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnAksam"
+                        android:backgroundTint="@color/green"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:text="Akşam" />
+
+                    <Button
+                        android:id="@+id/btnTatli"
+                        android:backgroundTint="@color/green"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:text="Tatlı" />
+                </LinearLayout>
+
+                <!-- Personal -->
+                <TextView
+                    android:id="@+id/titlePersonal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sana Özel Öneriler"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="22dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerPersonal"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp" />
+
+                <!-- Health -->
+                <TextView
+                    android:id="@+id/titleHealth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sağlık Durumuna Uygun Tarifler"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="22dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerHealth"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- Bottom Nav -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/nav_icon_selector"
+        app:itemTextColor="@color/nav_icon_selector" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

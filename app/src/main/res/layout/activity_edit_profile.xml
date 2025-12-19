@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:gravity="center_horizontal">
+
+            <!-- لــوجــو التطبيق -->
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_profile"
+                android:layout_marginBottom="32dp"
+                android:contentDescription="@string/app_name" />
+
+            <!-- الاسم الكامل -->
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ad Soyad"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:paddingBottom="8dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:drawablePadding="8dp"
+                android:layout_marginBottom="24dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:backgroundTint="#CCCCCC" />
+
+            <!-- البريد الإلكتروني -->
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-posta adresi"
+                android:inputType="textEmailAddress"
+                android:background="@android:color/transparent"
+                android:paddingBottom="8dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="#CCCCCC" />
+
+            <!-- كلمة المرور الجديدة -->
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yeni Şifre"
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+                android:paddingBottom="8dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="#CCCCCC" />
+
+            <!-- تأكيد كلمة المرور -->
+            <EditText
+                android:id="@+id/editConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Şifreyi tekrar girin"
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+                android:paddingBottom="8dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="#CCCCCC" />
+
+            <!-- زر التحديث -->
+            <Button
+                android:id="@+id/updateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BİLGİLERİ GÜNCELLE"
+                android:backgroundTint="#43A047"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:padding="12dp" />
+
+            <!-- التخلي عن تغيير كلمة المرور -->
+            <TextView
+                android:id="@+id/skipPasswordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Şifreyi değiştirmek istemiyorum"
+                android:textColor="#00796B"
+                android:textSize="14sp"
+                android:layout_marginTop="24dp"
+                android:clickable="true" />
+
+        </LinearLayout>
+    </ScrollView>
