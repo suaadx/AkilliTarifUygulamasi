@@ -113,22 +113,35 @@ Bu kurallar, uygulama içerisinde kural tabanlı bir filtreleme mantığı ile p
 ## 📱 Uygulama Ekran Görüntüleri
 
 ### Splash Screen
-<img src="screenshots/splash.png" width="300">
+<div align="center">
+  <img src="screenshots/splash.png" width="300">
+</div>
 
 ### Sağlık Durumu Seçimi
-<img src="screenshots/saglikdurum.png" width="300">
+<div align="center">
+  <img src="screenshots/saglikdurum.png" width="300">
+</div>
 
 ### Ana Sayfa
-<img src="screenshots/home.png" width="300">
+<div align="center">
+  <img src="screenshots/home.png" width="300">
+</div>
 
 ### Yapay Zeka Destekli Öneriler
-<img src="screenshots/oneri.png" width="300">
+<div align="center">
+  <img src="screenshots/oneri.png" width="300">
+</div>
 
 ### Tarif Detay Sayfası
-<img src="screenshots/tarifdetay.png" width="300">
+<div align="center">
+  <img src="screenshots/tarifdetay.png" width="300">
+</div>
 
-### Yönetici (Admin) Paneli
-<img src="screenshots/adminhome.png" width="300">
+### Yönetici Paneli
+<div align="center">
+  <img src="screenshots/adminhome.png" width="300">
+</div>
+
 
 
 ---
